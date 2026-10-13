@@ -1,0 +1,25 @@
+# Rust build artifacts
+target/
+**/target/
+
+# Trunk / frontend build output
+dist/
+**/dist/
+.wasm-bin/
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# Node
+node_modules/
+
+# Env / secrets
+.env
+.env.local
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp

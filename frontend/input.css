@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thin scrollbars for dense panes */
+.scrollthin::-webkit-scrollbar { width: 10px; height: 10px; }
+.scrollthin::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 5px; }
+.scrollthin::-webkit-scrollbar-track { background: transparent; }
+
+/* Toast entrance */
+@keyframes slide-in { from { transform: translateX(24px); opacity: 0; } }
+.toast-in { animation: slide-in 0.18s ease-out; }
+
+/* Live dot pulse */
+@keyframes pulse-dot { 50% { opacity: 0.35; } }
+.dot-busy { animation: pulse-dot 1s infinite; }
+
+/* Scan running shimmer for status text */
+@keyframes pulse-run { 50% { opacity: 0.4; } }
+.run-busy { animation: pulse-run 1.2s infinite; }
